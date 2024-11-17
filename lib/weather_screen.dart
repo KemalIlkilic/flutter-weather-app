@@ -32,7 +32,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
       //jsonDecode in Dart is a function that converts a JSON string (which is just text) into Dart objects that you can actually work with.
       // JSON STRING => DART OBJECT (probably map)
       final data = jsonDecode(res.body);
-      print(data);
 
       if (data['cod'] != '200') {
         throw 'An unexpected error occurred';
